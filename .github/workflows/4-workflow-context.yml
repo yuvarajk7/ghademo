@@ -3,7 +3,17 @@ name: Context testing
 on: push
 
 jobs:
+
+  inits-context:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: init context
+        run: echo "context running on ${{github.ref}}"
+
   dumb-context:
+    if: github.ref == 'refs/heads/main'
+    needs: inits-context
     runs-on: ubuntu-latest
     steps:
 
