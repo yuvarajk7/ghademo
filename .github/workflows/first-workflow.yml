@@ -27,8 +27,21 @@ jobs:
     
     - name: Read file
       run: cat dragon.txt
-    
+
     - name: List files
       run: ls -ltra
 
+  second_job:
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: checkout demo
+      uses: actions/checkout@v4
+
+    - name: Execute script file
+      run: ./ascii-dog.sh
+    
+    - name: list files
+      run: ls -ltra
 
