@@ -1,6 +1,6 @@
 #/bin/sh
 sudo apt-get install cowsay -y
-cowsay -f dog "I love my dog" >> dog.txt
-grep -i "dog" dog.txt
-cat dog.txt
+cowsay -f elephant "I love my elephant" >> elephant.txt
+grep -i "elephant" elephant.txt
+cat elephant.txt
 ls -ltra
