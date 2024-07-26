@@ -20,13 +20,13 @@ jobs:
       run: sudo apt-get install cowsay -y
     
     - name: Generate ASCII Chart
-      run: cowsay -f dog "Hi Benzi. Love you!" >> dog.txt
+      run: cowsay -f dragon "Hi Benzi. Love you!" >> dragon.txt
 
     - name: Test file exits
-      run: grep -i "dog" dog.txt
+      run: grep -i "dragon" dragon.txt
     
     - name: Read file
-      run: cat dog.txt
+      run: cat dragon.txt
     
     - name: List files
       run: ls -ltra
