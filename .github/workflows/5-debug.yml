@@ -21,7 +21,6 @@ jobs:
         run: |
           echo "Printing USERNAME from env"
           echo "$USER_NAME"
-          exit 1
       
       - name: Step4 - Print USER_2
         run: |
