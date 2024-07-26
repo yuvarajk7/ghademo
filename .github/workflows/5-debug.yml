@@ -23,7 +23,7 @@ jobs:
         run: |
           echo "Printing USERNAME from env"
           echo "User Name : $USER_NAME"
-          exit 1
+          exit 0
       
       - name: Step4 - Print USER_2
         run: |
