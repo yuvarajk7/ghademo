@@ -1,8 +1,6 @@
 name: Debug demo
 
-on:
-  workflow_dispatch:
-  push:
+on: [workflow_dispatch, push]
 
 env:
   USER_1: "foo"
@@ -22,7 +20,7 @@ jobs:
       - name: Step3 - print $USERNAME
         run: |
           echo "Printing USERNAME from env"
-          echo $USER_NAME
+          echo "$USER_NAME"
           exit 1
       
       - name: Step4 - Print USER_2
