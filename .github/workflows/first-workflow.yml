@@ -20,7 +20,7 @@ jobs:
       run: sudo apt-get install cowsay -y
     
     - name: Generate ASCII Chart
-      run: cowsay -f dragon "Hi Benzi. Love you!" >> dragon.txt
+      run: cowsay -f dragon "Hi Benzi. Love you dragon!" >> dragon.txt
 
     - name: Test file exits
       run: grep -i "dragon" dragon.txt
